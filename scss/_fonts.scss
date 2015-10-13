@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+@font-face {
+	font-family:'Panton';
+	src: url('../fonts/Panton-Regular/Panton-Regular.eot');
+	src: url('../fonts/Panton-Regular/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Panton-Regular/Panton-Regular.woff') format('woff'),
+	url('../fonts/Panton-Regular/Panton-Regular.ttf') format('truetype'),
+	url('../fonts/Panton-Regular/Panton-Regular.svg#Panton-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'Panton';
+	src: url('../fonts/Panton-Bold/Panton-Bold.eot');
+	src: url('../fonts/Panton-Bold/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Panton-Bold/Panton-Bold.woff') format('woff'),
+	url('../fonts/Panton-Bold/Panton-Bold.ttf') format('truetype'),
+	url('../fonts/Panton-Bold/Panton-Bold.svg#Panton-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'Panton';
+	src: url('../fonts/Panton-ExtraBold/Panton-ExtraBold.eot');
+	src: url('../fonts/Panton-ExtraBold/Panton-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Panton-ExtraBold/Panton-ExtraBold.woff') format('woff'),
+	url('../fonts/Panton-ExtraBold/Panton-ExtraBold.ttf') format('truetype'),
+	url('../fonts/Panton-ExtraBold/Panton-ExtraBold.svg#Panton-ExtraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+
+$font-condensed     :   'Roboto Condensed', sans-serif;
+$font-panton        :   'Panton';
