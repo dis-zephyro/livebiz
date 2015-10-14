@@ -66,6 +66,7 @@ label {
 	width: 460px;
 	background: #fff;
 	padding: 20px 23px 10px 23px;
+	@include border-radius(15px);
 
 	&.modal-rate {
 		width: 456px;

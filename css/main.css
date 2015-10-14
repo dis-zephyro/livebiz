@@ -350,7 +350,11 @@ label {
 .modal-box {
   width: 460px;
   background: #fff;
-  padding: 20px 23px 10px 23px; }
+  padding: 20px 23px 10px 23px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
   .modal-box.modal-rate {
     width: 456px; }
   .modal-box.done {
@@ -440,6 +444,28 @@ label {
 .embed-responsive-4by3 {
   padding-bottom: 75%; }
 
+@keyframes scaleUp {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+.scaleUp {
+  -webkit-animation-name: scaleUp;
+  animation-name: scaleUp; }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
 .header {
   top: 0;
   left: 0;
@@ -599,6 +625,8 @@ label {
       font-size: 11px;
       font-weight: 300;
       line-height: 16px; }
+    .b01 .b01__form .red .form-control {
+      border-color: #ff0000; }
     .b01 .b01__form .form-control {
       border: 1px solid #fff;
       -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
@@ -1233,6 +1261,23 @@ label {
 
 .b09 #map {
   height: 450px; }
+
+.b01__ring1,
+.b01__ring2,
+.b01__ring3 {
+  opacity: 0; }
+
+.b01__ring1 {
+  -webkit-animation: scaleUp 1s .6s forwards;
+  animation: scaleUp 1s .6s forwards; }
+
+.b01__ring2 {
+  -webkit-animation: scaleUp 1s .8s forwards;
+  animation: scaleUp 1s 0.8s forwards; }
+
+.b01__ring3 {
+  -webkit-animation: scaleUp 1s 1s forwards;
+  animation: scaleUp 1s 1s forwards; }
 
 /* Base styles
    ========================= */

@@ -1,0 +1,21 @@
+.b01__ring1,
+.b01__ring2,
+.b01__ring3 {
+	opacity: 0;
+}
+
+
+.b01__ring1 {
+	-webkit-animation: scaleUp 1s .6s forwards;
+	animation: scaleUp 1s .6s forwards;
+}
+
+.b01__ring2 {
+	-webkit-animation: scaleUp 1s .8s forwards;
+	animation: scaleUp 1s.8s forwards;
+}
+
+.b01__ring3 {
+	-webkit-animation: scaleUp 1s 1s forwards;
+	animation: scaleUp 1s 1s forwards;
+}

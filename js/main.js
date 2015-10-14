@@ -58,9 +58,9 @@ $(".btn-modal").fancybox({
 
 $(document).ready(function() {
 
-    $('.btn-send').click(function() {
+    $('.bnt-send').click(function() {
 
-        $('body').find('form:not(this)').children('.valid').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
+        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
         var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
         if(answer != false)
         {
@@ -76,9 +76,10 @@ $(document).ready(function() {
                 console.log(name, phone);
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
-                $.fancybox.open('#done');
+                $.fancybox.open('#done', 'closeBtn : false');
                 setTimeout("$.fancybox.close()", 3000);
             });
         }
     });
+
 });

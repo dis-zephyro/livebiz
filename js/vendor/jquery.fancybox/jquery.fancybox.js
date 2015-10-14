@@ -146,7 +146,7 @@
 				prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
 			},
 
-			// Properties for each animation type
+			// Properties for each animate type
 			// Opening fancyBox
 			openEffect  : 'fade', // 'elastic', 'fade' or 'none'
 			openSpeed   : 250,
@@ -391,7 +391,7 @@
 			}
 		},
 
-		// Start closing animation if is open; remove immediately if opening/closing
+		// Start closing animate if is open; remove immediately if opening/closing
 		close: function (event) {
 			F.cancel();
 
@@ -1690,7 +1690,7 @@
 	F.helpers.overlay = {
 		defaults : {
 			closeClick : true,      // if true, fancyBox will be closed when user clicks on the overlay
-			speedOut   : 200,       // duration of fadeOut animation
+			speedOut   : 200,       // duration of fadeOut animate
 			showEarly  : true,      // indicates if should be opened immediately or wait until the content is ready
 			css        : {},        // custom CSS properties
 			locked     : !isTouch,  // if true, the content will be locked into overlay
