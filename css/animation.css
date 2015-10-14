@@ -1,0 +1,162 @@
+
+.block02 .box li {
+	opacity: 0;
+}
+
+.block02 .box li.item1.animated {
+	-webkit-animation: scaleUp 1s .2s forwards;
+	animation: scaleUp 1s .2s forwards;
+}
+
+.block02 .box li.item2.animated {
+	-webkit-animation: scaleUp 1s .2s forwards;
+	animation: scaleUp  1s.2s forwards;
+}
+
+.block02 .box li.item3.animated {
+	-webkit-animation: scaleUp 1s .2s forwards;
+	animation: scaleUp 1s .2s forwards;
+}
+
+.block02 .box li.item4.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block02 .box li.item5.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block02 .box li.item6.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block02 .box li.item7.animated{
+	-webkit-animation: scaleUp 1s .6s forwards;
+	animation: scaleUp 1s .6s forwards;
+}
+
+.block02 .box li.item8.animated {
+	-webkit-animation: scaleUp 1s .6s forwards;
+	animation: scaleUp 1s .6s forwards;
+}
+
+
+
+.block04 .advantage li.scroll {
+	opacity: 0;
+}
+
+.block04 .advantage li.item05.animated {
+	-webkit-animation: fadeInRight 1s .8s forwards;
+	animation: fadeInRight 1s .8s forwards;
+}
+
+.block04 .advantage li.item02.animated {
+	-webkit-animation: slideDown 1s .8s forwards;
+	animation: slideDown 1s .8s forwards;
+}
+
+.block04 .advantage li.item03.animated {
+	-webkit-animation: slideDown 1s .8s forwards;
+	animation: slideDown 1s .8s forwards;
+}
+
+.block04 .advantage li.item04.animated {
+	-webkit-animation: slideDown 1s .8s forwards;
+	animation: slideDown 1s .8s forwards;
+}
+
+.block04 .advantage li.item01.animated {
+	-webkit-animation: fadeInLeft 1s .8s forwards;
+	animation: fadeInLeft 1s .8s forwards;
+}
+
+.block04 .advantage li.item06.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block04 .advantage li.item07.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block04 .advantage li.item08.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block04 .advantage li.item09.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block04 .advantage li.item10.animated {
+	-webkit-animation: fadeInLeft 1s .8s forwards;
+	animation: fadeInLeft 1s .8s forwards;
+}
+
+.block04 .advantage li.item11.animated {
+	-webkit-animation: fadeInUp 1s .8s forwards;
+	animation: fadeInUp 1s .8s forwards;
+
+}
+.block04 .advantage li.item12.animated {
+	-webkit-animation: fadeInUp 1s .8s forwards;
+	animation: fadeInUp 1s .8s forwards;
+}
+
+.block04 .advantage li.item13.animated {
+	-webkit-animation: fadeInUp 1s .8s forwards;
+	animation: fadeInUp 1s .8s forwards;
+}
+
+.block04 .advantage li.item14.animated {
+	-webkit-animation: fadeInRight 1s .8s forwards;
+	animation: fadeInRight 1s .8s forwards;
+
+}
+
+
+
+.block09 .seminar li .arrow {
+	opacity: 0;
+}
+
+.block09 .seminar li.item01 .arrow.animated {
+	 -webkit-animation: scaleUp 1s .2s forwards;
+	 animation: scaleUp 1s .2s forwards;
+ }
+
+.block09 .seminar li.item02 .arrow.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}
+
+.block09 .seminar li.item03 .arrow.animated {
+	-webkit-animation: scaleUp 1s .6s forwards;
+	animation: scaleUp 1s .6s forwards;
+}
+
+.block09 .seminar li.item04 .arrow.animated {
+	-webkit-animation: scaleUp 1s .8s forwards;
+	animation: scaleUp 1s .8s forwards;
+}
+
+.block09 .seminar li.item05 .arrow.animated {
+	-webkit-animation: scaleUp 1s .9s forwards;
+	animation: scaleUp 1s .9s forwards;
+}
+
+
+.block11 ul li  {
+	opacity: 0;
+}
+
+.block11 ul li.animated {
+	-webkit-animation: scaleUp 1s .4s forwards;
+	animation: scaleUp 1s .4s forwards;
+}

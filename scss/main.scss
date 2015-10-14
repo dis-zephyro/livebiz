@@ -17,12 +17,16 @@
 
 
 @import "header";
+@import "footer";
 @import "block01";
 @import "block02";
 @import "block03";
 @import "block04";
 @import "block05";
 @import "block06";
+@import "block07";
+@import "block08";
+@import "block09";
 
 /* Base styles
    ========================= */
@@ -49,7 +53,6 @@ body {
     padding-top: 108px;
     font-family: 'Roboto', sans-serif;
 }
-
 
 .container {
     width: 1020px;
@@ -100,7 +103,10 @@ ul {
     list-style: none;
 }
 
-
 .text-yellow {
     color: #fad129;
+}
+
+.text-red {
+    color: #b72525;
 }

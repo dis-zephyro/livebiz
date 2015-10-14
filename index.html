@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/slick/slick.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -30,10 +31,11 @@
                 </nav>
                 <div class="header__contact">
                     <div class="header__tel">8(988) 004 73 78</div>
-                    <a href="#modal" class="btn btn-sm btn-popup">Получить консультацию маркетолога</a>
+                    <a href="#consul" class="btn btn-sm btn-modal">Получить консультацию маркетолога</a>
                 </div>
             </div>
         </header>
+
         <section class="b01">
             <div class="container">
                 <div class="b01__text">
@@ -47,11 +49,11 @@
                     <form class="form">
                         <div class="form__title">Заполните форму</div>
                         <div class="form__subtitle">и узнайте сколько клиентов вы получите с помощью наших Landing page</div>
-                        <div class="form-group">
+                        <div class="form-group valid name none required">
                             <label class="label__name">Введите ваше имя</label>
                             <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group valid phone none required">
                             <label class="label__phone">Введите ваш номер телефона</label>
                             <input type="text" name="phone" class="form-control" placeholder="">
                         </div>
@@ -99,7 +101,7 @@
                                     <a class="btn-transparent" href="#"><span>Перейти на сайт</span></a>
                                 </div>
                                 <div class="col">
-                                    <a class="btn btn-md btn-popup" href="#">Хочу так же</a>
+                                    <a class="btn btn-md btn-modal" href="#order">Хочу так же</a>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +138,7 @@
                                     <a class="btn-transparent" href="#"><span>Перейти на сайт</span></a>
                                 </div>
                                 <div class="col">
-                                    <a class="btn btn-md btn-popup" href="#">Хочу так же</a>
+                                    <a class="btn btn-md  btn-modal" href="#order">Хочу так же</a>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +175,7 @@
                                     <a class="btn-transparent" href="#"><span>Перейти на сайт</span></a>
                                 </div>
                                 <div class="col">
-                                    <a class="btn btn-md btn-popup" href="#">Хочу так же</a>
+                                    <a class="btn btn-md btn-modal" href="#order">Хочу так же</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +212,7 @@
                                     <a class="btn-transparent" href="#"><span>Перейти на сайт</span></a>
                                 </div>
                                 <div class="col">
-                                    <a class="btn btn-md btn-popup" href="#">Хочу так же</a>
+                                    <a class="btn btn-md btn-modal" href="#order">Хочу так же</a>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +301,7 @@
                     </li>
                 </ul>
                 <div class="text-center">
-                    <a href="#" class="btn btn-lg">Получить консультацию от команды LiveBiz</a>
+                    <a href="#consul" class="btn btn-lg btn-modal">Получить консультацию от команды LiveBiz</a>
                 </div>
             </div>
         </section>
@@ -311,16 +313,51 @@
                     <li class="item1">
                         <div class="solution__item">
                             <div class="solution__title">Старт</div>
+                            <div class="solution__legend">50% после утверждения макета и 50% после запуска</div>
+                            <p>Первые 50% Вы оплачиваете
+                                после утверждения Вами готового
+                                дизайн-макета, вторые 50% после
+                                запуска готового Landing Page
+                            </p>
+                            <a href="#rate-start" class="solution__choice btn-modal">Выбрать</a>
                         </div>
                     </li>
                     <li class="item2">
                         <div class="solution__item">
                             <div class="solution__title">Бизнес</div>
+                            <div class="solution__legend">Без предоплаты оплата<br/>за результат</div>
+                            <p>Вы не платите ни рубля во время
+                                разработки Landing Page.
+                                Полную стоимость Вы оплачиваете
+                                только после получения
+                                реального результата.
+                            </p>
+                            <ul class="solution__present">
+                                <li>Настройка и месяц ведения Я.Директ</li>
+                            </ul>
+                            <div class="solution__price">34 900 р</div>
+                            <a href="#rate-business" class="solution__choice btn-modal">Выбрать</a>
                         </div>
+                        <a href="#rate-business" class="solution__ok btn-modal"></a>
                     </li>
                     <li class="item3">
                         <div class="solution__item">
                             <div class="solution__title">Премиум</div>
+                            <div class="solution__legend">Без предоплаты оплата<br/>за результат</div>
+                            <p>Вы не платите ни рубля во время
+                                разработки Landing Page.
+                                Полную стоимость Вы оплачиваете
+                                только после получения первых
+                                5 заявок либо звонков.
+                            </p>
+                            <ul class="solution__present">
+                                <li>Настройка и месяц ведения Я.Директ</li>
+                                <li>Настройка и месяц ведения G.Adwords</li>
+                                <li>Таргетированная Реклама в Вконтакте</li>
+                                <li>Индивидуальный дизайн</li>
+                            </ul>
+                            <div class="solution__price">79 900 р</div>
+                            <a href="#rate-platinum" class="solution__choice btn-modal">Выбрать</a>
                         </div>
                     </li>
                 </ul>
@@ -329,23 +366,257 @@
 
         <section class="b06">
             <div class="container">
-                <h2></h2>
+                <h2>Как мы работаем</h2>
+                <div class="clearfix">
+                    <ul class="how">
+                        <li class="item1">
+                            <img src="img/b06_item1.png" alt="">
+                            <span>Вы оставляете заявку на сайте</span>
+                            <a href="#order" class="btn btn-sm btn-modal">Оставить заявку</a>
+                            <div class="how__ring">или звоните<span>8(988) 004 73 78</span></div>
+                        </li>
+                    </ul>
+                    <ul class="how">
+                        <li class="item2">
+                            <img src="img/b06_item2.png" alt="">
+                            <span>Наш специалист связывается в течении 10 мин </span>
+                        </li>
+                        <li class="item7">
+                            <img src="img/b06_item7.png" alt="">
+                            <span>Оплата стоимости проекта</span>
+                        </li>
+                    </ul>
+                    <ul class="how">
+                        <li class="item3">
+                            <img src="img/b06_item3.png" alt="">
+                            <span>Личная встреча, знакомство с вашей нишей</span>
+                        </li>
+                        <li class="item6">
+                            <img src="img/b06_item6.png" alt="">
+                            <span>Выход на заявленный результат</span>
+                        </li>
+                    </ul>
+                    <ul class="how">
+                        <li class="item4">
+                            <img src="img/b06_item4.png" alt="">
+                            <span>Подписание договора</span>
+                        </li>
+                        <li class="item5">
+                            <img src="img/b06_item5.png" alt="">
+                            <span>Создание и запуск Landing Page</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="b07">
             <div class="container">
-                <h2></h2>
+                <h2>Отзывы наших клиентов</h2>
+                <div class="inner">
+                    <div class="reply">
+                        <div class="reply__item">
+                            <div class="reply__photo">
+                                <img class="img-responsive" src="img/reply01.png" alt="">
+                            </div>
+                            <div class="reply__text">
+                                <div class="reply__author">Иван Иванов</div>
+                                <div class="reply__legend">47 лет, г. Москва</div>
+                                <p>Ручное рубило было первым великим изобретением древнего человека, значительно облегчившим его жизнь. При помощи рубила, держа его различно, то за тупой, то за острый конец, можно было растирать и размельчать растительную пищу, соскабливать и очищать кору.</p>
+                            </div>
+                        </div>
+
+                        <div class="reply__item">
+                            <div class="reply__photo">
+                                <img class="img-responsive" src="img/reply01.png" alt="">
+                            </div>
+                            <div class="reply__text">
+                                <div class="reply__author">Иван Иванов</div>
+                                <div class="reply__legend">47 лет, г. Москва</div>
+                                <p>Ручное рубило было первым великим изобретением древнего человека, значительно облегчившим его жизнь. При помощи рубила, держа его различно, то за тупой, то за острый конец, можно было растирать и размельчать растительную пищу, соскабливать и очищать кору.</p>
+                            </div>
+                        </div>
+
+                        <div class="reply__item">
+                            <div class="reply__photo">
+                                <img class="img-responsive" src="img/reply01.png" alt="">
+                            </div>
+                            <div class="reply__text">
+                                <div class="reply__author">Иван Иванов</div>
+                                <div class="reply__legend">47 лет, г. Москва</div>
+                                <p>Ручное рубило было первым великим изобретением древнего человека, значительно облегчившим его жизнь. При помощи рубила, держа его различно, то за тупой, то за острый конец, можно было растирать и размельчать растительную пищу, соскабливать и очищать кору.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="reply__nav prev"></span>
+                    <span class="reply__nav next"></span>
+                </div>
             </div>
         </section>
 
+        <section class="b08">
+            <div class="container">
+                <h3>Начните увеличивать прибыль вашего бизнеса уже сейчас</h3>
+                <div class="white-box">
+                    <span>Начните разработку лендинга бесплатно уже сегодня,</span>
+                    а заплатите за него, когда получите первых клиентов
+                </div>
+                <a href="#order" class="btn btn-lg btn-modal">ПОлучить первых клиентов бесплатно</a>
+                <div class="b08__logo"></div>
+            </div>
+        </section>
+
+        <section class="b09">
+            <div id="map"></div>
+        </section>
+
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <ul class="footer__left">
+                    <li>ИП Борщов И.А.</li>
+                    <li>ОГРНИП: 314344336700572</li>
+                    <li>ИНН: 346000815375</li>
+                </ul>
+                <ul class="footer__center">
+                    <li>Напишите нам: info@sitename.ru</li>
+                    <li>© 2015, Все права защищены</li>
+                </ul>
+                <div class="footer__contact">
+                    <div class="footer__tel">8(988) 004 73 78</div>
+                    <a href="#consul" class="btn btn-sm btn-modal">Получить консультацию маркетолога</a>
+                </div>
+            </div>
         </footer>
+
+
+        <div class="hide">
+
+            <!-- Modal 0ne -->
+            <div class="modal-box" id="consul">
+                <div class="form__title">Получите консультацию специалиста<br/>в области интернет маркетинга</div>
+                <ul class="form__source">
+                    <li>Вы получите бесплатный аудит вашего текущего сайта (Если он у Вас уже есть)</li>
+                    <li>Вы узнаете сколько клиентов ищут ваш товар или услугу в интернете</li>
+                    <li>Вы узнаете нужен ли вашему бизнесу сайт на данном этапе</li>
+                </ul>
+                <form class="form">
+                    <div class="form-group valid name none required">
+                        <label class="label__name">Введите ваше имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <label class="label__phone">Введите ваш номер телефона</label>
+                        <input type="text" name="phone" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-submit bnt-send">Узнать количество клиентов</button>
+                    </div>
+                    <div class="sup text-center">Мы гарантируем Вас 100% конфиденциальности ваши данные не будут переданы 3 лицам</div>
+                </form>
+            </div>
+
+            <!-- Modal Two -->
+            <div class="modal-box" id="order">
+                <div class="form__title">Оставьте заявку<br/>на создание Landing Page<br/>прямо сейчас и вы получите</div>
+                <ul class="form__source">
+                    <li>Настройка и месячное ведение Я.Директ <strong class="text-red">В ПОДАРОК!</strong></li>
+                    <li>Возможность оплатить Landing Page  Только при достижении нами результата</li>
+                    <li>Шоколадка при личной встрече и обсуждение деталей проект</li>
+                </ul>
+                <form class="form">
+                    <div class="form-group valid name none required">
+                        <label class="label__name">Введите ваше имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <label class="label__phone">Введите ваш номер телефона</label>
+                        <input type="text" name="phone" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-submit bnt-send">Узнать количество клиентов</button>
+                    </div>
+                    <div class="sup text-center">Мы гарантируем Вас 100% конфиденциальности ваши данные не будут переданы 3 лицам</div>
+                </form>
+            </div>
+
+            <!-- Modal Rate -->
+            <div class="modal-box modal-rate" id="rate-start">
+                <div class="form__title">Пакет<span class="rate-start">Старт</span></div>
+                <ul class="form__source">
+                    <li>Настройка и месячное ведение Я.Директ <strong class="text-red">В ПОДАРОК!</strong></li>
+                </ul>
+                <form class="form">
+                    <div class="form-group valid name none required">
+                        <label class="label__name">Введите ваше имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <label class="label__phone">Введите ваш номер телефона</label>
+                        <input type="text" name="phone" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-submit btn-green bnt-send">Узнать количество клиентов</button>
+                    </div>
+                    <div class="sup text-center">Мы гарантируем Вас 100% конфиденциальности ваши данные не будут переданы 3 лицам</div>
+                </form>
+            </div>
+
+            <div class="modal-box modal-rate" id="rate-business">
+                <div class="form__title">Пакет<span class="rate-business">БИЗНЕС</span></div>
+                <ul class="form__source">
+                    <li>Настройка и месячное ведение Я.Директ <strong class="text-red">В ПОДАРОК!</strong></li>
+                </ul>
+                <form class="form">
+                    <div class="form-group valid name none required">
+                        <label class="label__name">Введите ваше имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <label class="label__phone">Введите ваш номер телефона</label>
+                        <input type="text" name="phone" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-submit bnt-send">Узнать количество клиентов</button>
+                    </div>
+                    <div class="sup text-center">Мы гарантируем Вас 100% конфиденциальности ваши данные не будут переданы 3 лицам</div>
+                </form>
+            </div>
+
+            <div class="modal-box modal-rate" id="rate-platinum">
+                <div class="form__title">Пакет<span class="rate-platinum">Платинум</span></div>
+                <ul class="form__source">
+                    <li>Настройка и месячное ведение Я.Директ <strong class="text-red">В ПОДАРОК!</strong></li>
+                </ul>
+                <form class="form">
+                    <div class="form-group valid name none required">
+                        <label class="label__name">Введите ваше имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group valid phone none required">
+                        <label class="label__phone">Введите ваш номер телефона</label>
+                        <input type="text" name="phone" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-submit btn-purple bnt-send">Узнать количество клиентов</button>
+                    </div>
+                    <div class="sup text-center">Мы гарантируем Вас 100% конфиденциальности ваши данные не будут переданы 3 лицам</div>
+                </form>
+            </div>
+
+            <!-- Modal Done-->
+            <div class="modal-box done" id="done">
+                <div class="form__title"><span class="rate-platinum">Спасибо</span></div>
+                <div class="done__text">Наш менеджер перезвонит вам в ближайшее время</div>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/validator.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

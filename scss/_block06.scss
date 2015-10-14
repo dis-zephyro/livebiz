@@ -1,0 +1,83 @@
+.b06 {
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+	.how {
+		width: 180px;
+		float: left;
+		margin: 0 50px 0 0;
+		list-style: none;
+
+		li {
+			color: #000;
+			height: 210px;
+			font-size: 13px;
+			line-height: 16px;
+			text-align: center;
+			position: relative;
+
+			&:before {
+				top: 50px;
+				right: -76px;
+				width: 104px;
+				height: 28px;
+				content: ' ';
+				position: absolute;
+				background: url("../img/b06_arrow.png") 50% -28px no-repeat;
+			}
+
+			&.item4 {
+				&:before {
+					top: 63px;
+					width: 102px;
+					height: 211px;
+					background: url("../img/bo6_line.png") 0 0 no-repeat;
+				}
+			}
+
+			&.item5 {
+				&:before {
+					display: none;
+				}
+			}
+
+			&.item6 {
+				&:before {
+					background-position: 50% 0;
+				}
+			}
+
+			&.item7 {
+				&:before {
+					background-position: 50% 0;
+				}
+			}
+
+			img {
+				margin-bottom: 15px;
+			}
+
+			span {
+				display: block;
+			}
+		}
+
+		.how__ring {
+			color: #000;
+			font-size: 16px;
+			line-height: 20px;
+			font-family: $font-condensed;
+
+			span {
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 30px;
+			}
+		}
+
+		.btn {
+			margin-top: 15px;
+			margin-bottom: 10px;
+		}
+	}
+}
