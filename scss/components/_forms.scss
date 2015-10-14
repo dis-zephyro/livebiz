@@ -2,17 +2,20 @@
 .form-control {
 	margin: 0;
 	width: 100%;
-	color: #eee;
-	border: none;
 	outline: none;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 10px 10px;
-	font-style: italic;
+	color: #b7b7b7;
+	font-size: 24px;
+	font-weight: 300;
+	background: #fff;
+	text-align: left;
+	line-height: 30px;
+	padding: 11px 15px;
 	display: inline-block;
-	background: transparent;
-	border-bottom: 1px solid #eee;
-	@include placeholder(#eee);
+	font-family: $font-condensed;
+	border: 1px solid #fff;
+	@include placeholder(#b7b7b7);
+	@include border-radius(4px);
+	@include box-shadow(0px 3px 7px 0px rgba(0, 0, 0, 0.35));
 
 	&::-ms-clear {
 		display: none;
@@ -20,12 +23,12 @@
 		height: 0;
 	}
 
-	&.invert {
-		color: #5b646e;
-		border-color: #5b646e;
-		@include placeholder(#5b646e);
+	&:focus {
+		border-color: #f5f5f5;
 	}
 }
+
+
 
 .red {
 
@@ -38,13 +41,27 @@
 	}
 }
 
-
-
 label {
-	font-weight: 400;
+	height: 20px;
 	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16px;
+	margin-bottom: 3px;
+
+	&.label__name {
+		color: #fff;
+		padding: 2px 0 2px 40px;
+		background: url("../img/icon_user.png") 15px 50% no-repeat;
+	}
+
+	&.label__phone {
+		color: #fff;
+		padding: 2px 0 2px 40px;
+		background: url("../img/icon_phone.png") 15px 50% no-repeat;
+	}
 }
 
 .form-group {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }

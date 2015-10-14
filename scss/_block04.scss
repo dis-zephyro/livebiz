@@ -1,0 +1,129 @@
+.b04 {
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 70px;
+
+	.boss {
+		padding: 0;
+		font-size: 0;
+		line-height: 0;
+		list-style: none;
+		text-align: center;
+		margin: 0 0 30px 0;
+		vertical-align: top;
+
+		li {
+			color: #000;
+			width: 290px;
+			height: 730px;
+			margin: 0 20px;
+			font-size: 16px;
+			padding-top: 12px;
+			line-height: 20px;
+			position: relative;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+
+			img {
+				margin-bottom: 24px;
+			}
+
+			&.item1 {
+
+				.boss__name {
+					left: -60px;
+
+					&:before {
+						right: 23px;
+					}
+				}
+			}
+
+			&.item2 {
+
+				.boss__name {
+					left: 200px;
+
+					&:before {
+						left: 23px;
+						background: url("../img/b04_arrow-left.png") 0 0 no-repeat;
+					}
+				}
+			}
+		}
+
+		.boss__name {
+			top: 0;
+			color: #fff;
+			font-size: 19px;
+			font-weight: 800;
+			line-height: 21px;
+			padding: 12px 20px;
+			position: absolute;
+			white-space: nowrap;
+			background: #a1b961;
+			font-family: $font-panton;
+
+			&:before {
+				width: 18px;
+				height: 18px;
+				content: ' ';
+				bottom: -18px;
+				position: absolute;
+				background: url("../img/b04_arrow.png") 0 0 no-repeat;
+			}
+		}
+	}
+
+	.staff {
+		padding: 0;
+		font-size: 0;
+		line-height: 0;
+		list-style: none;
+		margin: 0 0 30px 0;
+		text-align: center;
+		vertical-align: top;
+
+		li {
+			color: #000;
+			width: 204px;
+			margin: 0 58px;
+			font-size: 16px;
+			padding-top: 36px;
+			line-height: 20px;
+			position: relative;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+
+			img {
+				margin-bottom: 20px;
+			}
+
+			.staff__name {
+				top: 0;
+				left: -60px;
+				color: #fff;
+				font-size: 19px;
+				font-weight: 800;
+				line-height: 21px;
+				padding: 12px 20px;
+				position: absolute;
+				white-space: nowrap;
+				background: #a1b961;
+				font-family: $font-panton;
+
+				&:before {
+					width: 18px;
+					height: 18px;
+					content: ' ';
+					bottom: -18px;
+					right: 23px;
+					position: absolute;
+					background: url("../img/b04_arrow.png") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+}

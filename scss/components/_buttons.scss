@@ -14,12 +14,11 @@
 	font-family: $font-condensed;
 	touch-action: manipulation;
 	border: 1px solid #ffc109;
-	@include transition(.3s);
+	@include transition(.6s);
 	@include gradient-vertical(#FCE030, #F4A711);
-	@include box-shadow(0px 3px 7px 0px rgba(0, 0, 0, 0.35));
+
 
 	&:hover {
-		color: #000;
 		@include gradient-vertical(#F4A711, #FCE030);
 		text-decoration: none;
 	}
@@ -34,4 +33,132 @@
 	font-size: 13px;
 	padding: 4px 25px;
 	@include border-radius(20px);
+	@include box-shadow(0px 3px 7px 0px rgba(0, 0, 0, 0.35));
+}
+
+.btn-md {
+	width: 100%;
+	font-size: 21px;
+	padding: 11px 5px;
+	@include border-radius(5px);
+	@include box-shadow(0px 3px 7px 0px rgba(0, 0, 0, 0.35));
+}
+
+.btn-lg {
+	font-size: 26px;
+	padding: 15px 60px;
+	@include border-radius(31px);
+}
+
+.btn-submit {
+	width: 100%;
+	font-size: 17px;
+	padding: 11px 15px;
+	@include border-radius(4px);
+	@include gradient-vertical(#ffed70, #ffcb27);
+
+
+	&:hover {
+		@include gradient-vertical(#ffcb27, #ffed70);
+		text-decoration: none;
+	}
+}
+
+.btn-transparent {
+	width: 100%;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 25px;
+	padding: 14px 5px;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: none;
+	background: transparent;
+	font-family: $font-condensed;
+	touch-action: manipulation;
+	@include transition(.3s);
+	@include border-radius(5px);
+
+	span {
+		border-bottom: 1px dashed #fff;
+	}
+
+	&:hover {
+		text-decoration: none;
+		background: rgba(255,255,255, 0.1);
+
+		span {
+			border-color: transparent;
+		}
+	}
+
+	&:active {
+		top: 1px;
+		@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+	}
+}
+
+
+.btn-vk {
+	color: #fff;
+	height: 54px;
+	outline: none;
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 25px;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: none;
+	background: transparent;
+	touch-action: manipulation;
+	font-family: $font-condensed;
+	padding: 12px 70px 10px 25px;
+	border: 1px solid transparent;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+	@include transition(.3s);
+	@include border-radius(5px);
+
+	&:before {
+		top: 50%;
+		right: 18px;
+		width: 44px;
+		height: 28px;
+		content: '';
+		position: absolute;
+		margin-top: -14px;
+		background: url("../img/icon_vk.png") 0 0 no-repeat;
+	}
+
+	&:active {
+		top: 1px;
+		@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+	}
+
+	&.vk-blue {
+		border-color: #4e81ab;
+		@include gradient-vertical(#6ba7d7, #4d84c7);
+
+		&:hover {
+			@include gradient-vertical(#4d84c7, #6ba7d7);
+		}
+	}
+
+	&.vk-yellow {
+		border-color: #d1aa1e;
+		@include gradient-vertical(#fbd930, #f9ca22);
+
+		&:hover {
+			@include gradient-vertical(#f9ca22, #fbd930);
+		}
+	}
 }
