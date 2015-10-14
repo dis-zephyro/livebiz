@@ -56,12 +56,18 @@ $(".btn-modal").fancybox({
 });
 
 
+// ----- РњР°СЃРєР° ----------
+jQuery(function($){
+    $("input[name='phone']").mask("+7(999) 999-9999");
+});
+
+
 $(document).ready(function() {
 
     $('.bnt-send').click(function() {
 
-        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
-        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        $('body').find('form:not(this)').children('div').removeClass('red'); //СѓРґР°Р»РµРЅРёРµ РІСЃРµС… СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ(РІР°Р»РёРґР°С‚РѕСЂР°)
+        var answer = checkForm($(this).closest('form').get(0)); //РѕС‚РІРµС‚ РѕС‚ РІР°Р»РёРґР°С‚РѕСЂР°
         if(answer != false)
         {
             var $form = $(this).closest('form'),
@@ -75,7 +81,7 @@ $(document).ready(function() {
             }).done(function(msg) {
                 console.log(name, phone);
                 $('form').find('input[type=text], textarea').val('');
-                console.log('удачно');
+                console.log('СѓРґР°С‡РЅРѕ');
                 $.fancybox.open('#done', 'closeBtn : false');
                 setTimeout("$.fancybox.close()", 3000);
             });
