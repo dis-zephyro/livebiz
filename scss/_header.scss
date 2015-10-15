@@ -62,6 +62,7 @@
 	.header__contact {
 		top: 10px;
 		right: 15px;
+		width: 260px;
 		text-align: right;
 		position: absolute;
 
@@ -72,10 +73,12 @@
 
 	.header__tel {
 		color: #fff;
+		display: block;
 		font-size: 27px;
 		font-weight: 600;
 		line-height: 30px;
 		margin-right: 20px;
 		margin-bottom: 10px;
+		text-decoration: none;
 	}
 }

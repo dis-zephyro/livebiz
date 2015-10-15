@@ -40,7 +40,7 @@
 			right: 0;
 			bottom: 0;
 			color: #fff;
-			height: 245px;
+			height: 170px;
 			position: absolute;
 			padding: 30px 30px 15px 30px;
 			background: rgba(0, 0, 0, 0.8);
@@ -90,6 +90,37 @@
 			float: left;
 			width: 33.33%;
 			padding: 0 8px;
+			overflow: hidden;
+			position: relative;
+
+			.result-link {
+				top: 0;
+				bottom: 0;
+				left: 8px;
+				right: 8px;
+				color: #fff;
+				opacity: 0;
+				display: block;
+				font-size: 22px;
+				line-height: 26px;
+				cursor: pointer;
+				padding-top: 110px;
+				position: absolute;
+				text-align: center;
+				text-decoration: none;
+				background: rgba(0, 0, 0, 0.8);
+				@include transition(.5s ease-out);
+
+				a {
+					width: 100%;
+				}
+			}
+
+			&:hover {
+				.result-link {
+					opacity: 1;
+				}
+			}
 		}
 	}
 }

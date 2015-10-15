@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer();
     $mail->From = 'noreply@'. $_SERVER['SERVER_NAME']; // от кого
     $mail->FromName = $_SERVER['SERVER_NAME']; // от кого
-    $mail->AddAddress('zephyro@yandex.ru', ''); // кому - адрес, Имя
+    $mail->AddAddress('zephyro@yandex.ru', 'livebz@yandex.ru'); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма

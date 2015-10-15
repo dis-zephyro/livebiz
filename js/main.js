@@ -33,12 +33,12 @@ var myMap,
 
 function init(){
     myMap = new ymaps.Map("map", {
-        center: [55.7753,37.4997],
+        center: [48.7209,44.5032],
         zoom: 14,
         controls: ['smallMapDefaultSet']
     });
 
-    myPlacemark = new ymaps.Placemark([55.7753,37.4997], {
+    myPlacemark = new ymaps.Placemark([48.7209,44.5032], {
         hintContent: ''
     }, {
         iconLayout: 'default#image',

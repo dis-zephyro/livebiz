@@ -32,6 +32,14 @@
 				background: #fff;
 				@include border-radius(10px);
 
+				vertical-align: middle;
+				-webkit-transform: translateZ(0);
+				transform: translateZ(0);
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-moz-osx-font-smoothing: grayscale;
+
 				&:before {
 					left: 50%;
 					bottom: -24px;
@@ -81,6 +89,14 @@
 
 				span {
 					background: #fad129;
+					-webkit-animation-name: hvr-wobble-vertical;
+					animation-name: hvr-wobble-vertical;
+					-webkit-animation-duration: 1s;
+					animation-duration: 1s;
+					-webkit-animation-timing-function: ease-in-out;
+					animation-timing-function: ease-in-out;
+					-webkit-animation-iteration-count: 1;
+					animation-iteration-count: 1;
 
 					&:before {
 						border-top-color: #fad129;

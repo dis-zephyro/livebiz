@@ -51,7 +51,7 @@
 						@include gradient-vertical(#fce130, #f4a611);
 
 						&:hover {
-							background: #f4a611;
+							@include gradient-vertical(#ffe958, #ffbd40);
 						}
 					}
 
@@ -148,6 +148,7 @@
 				font-size: 47px;
 				font-weight: 700;
 				line-height: 50px;
+				font-family: $font-pt;
 			}
 
 			.solution__choice {
@@ -194,10 +195,6 @@
 				margin-left: -24px;
 				position: absolute;
 				background: url("../img/icon_ok.png") 0 0 no-repeat;
-			}
-
-			&:hover {
-				background: #f4a611;
 			}
 		}
 	}

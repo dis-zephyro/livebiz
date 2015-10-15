@@ -2,10 +2,15 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/js/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/_animation.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/scss/_block01.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/_block02.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/scss/_block05.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/_footer.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/_header.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/scss/components/_buttons.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/scss/components/_forms.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scss/components/animate/_hvr-wobble-vertical.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/scss/main.scss" charset="UTF-8" />
   </component>
 </project>

@@ -19,7 +19,7 @@
 
 
 	&:hover {
-		@include gradient-vertical(#F4A711, #FCE030);
+		@include gradient-vertical(#fff08a, #f5d46c);
 		text-decoration: none;
 	}
 
@@ -60,7 +60,7 @@
 
 
 	&:hover {
-		@include gradient-vertical(#ffcb27, #ffed70);
+		@include gradient-vertical(#feef88, #fcd149);
 		text-decoration: none;
 	}
 
@@ -136,14 +136,15 @@
 	margin-bottom: 25px;
 	text-decoration: none;
 	display: inline-block;
+	border-color: #4e81ab;
 	vertical-align: middle;
 	background-image: none;
 	background: transparent;
 	touch-action: manipulation;
 	font-family: $font-condensed;
 	padding: 12px 70px 10px 25px;
-	border: 1px solid transparent;
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+	@include gradient-vertical(#6ba7d7, #4d84c7);
 	@include transition(.3s);
 	@include border-radius(5px);
 
@@ -158,26 +159,13 @@
 		background: url("../img/icon_vk.png") 0 0 no-repeat;
 	}
 
+	&:hover {
+		border-color: #d1aa1e;
+		@include gradient-vertical(#fbd930, #f9ca22);
+	}
+
 	&:active {
 		top: 1px;
 		@include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-	}
-
-	&.vk-blue {
-		border-color: #4e81ab;
-		@include gradient-vertical(#6ba7d7, #4d84c7);
-
-		&:hover {
-			@include gradient-vertical(#4d84c7, #6ba7d7);
-		}
-	}
-
-	&.vk-yellow {
-		border-color: #d1aa1e;
-		@include gradient-vertical(#fbd930, #f9ca22);
-
-		&:hover {
-			@include gradient-vertical(#f9ca22, #fbd930);
-		}
 	}
 }
