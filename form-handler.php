@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $form = $_POST['form'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
 
@@ -7,14 +8,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
     require 'class.phpmailer.php';
     $thm = "Вам отправлено сообщение с " . $_SERVER['SERVER_NAME'];
-    $msg = "<strong>Имя:</strong> $name<br/>";
+    $msg = "<strong>Заголовок формы:</strong> $form<br/>";
+    if(isset($name)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
 
 
     $mail = new PHPMailer();
     $mail->From = 'noreply@'. $_SERVER['SERVER_NAME']; // от кого
     $mail->FromName = $_SERVER['SERVER_NAME']; // от кого
-    $mail->AddAddress('zephyro@yandex.ru', 'livebz@yandex.ru'); // кому - адрес, Имя
+    $mail->AddAddress('livebz@yandex.ru', ''); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма

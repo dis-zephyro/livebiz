@@ -78,14 +78,15 @@ $(document).ready(function() {
         {
             var $form = $(this).closest('form'),
                 name    =     $('input[name="name"]', $form).val(),
-                phone   =     $('input[name="phone"]', $form).val()
-            console.log(name, phone);
+                phone   =     $('input[name="phone"]', $form).val(),
+                form   =     $('input[name="form"]', $form).val();
+            console.log(name, phone, form);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone}
+                data: {name: name, phone: phone, form:form}
             }).done(function(msg) {
-                console.log(name, phone);
+                console.log(name, phone, form);
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
                 $.fancybox.open('#done', 'closeBtn : false');

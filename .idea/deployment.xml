@@ -5,7 +5,7 @@
       <paths name="livebiz">
         <serverdata>
           <mappings>
-            <mapping deploy="/www/zephyrus.ru/project/livebiz" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/domains/livebz.ru" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -48,10 +48,11 @@
 
 					.solution__choice {
 						color: #000;
+						border-top: 1px solid #fce130;
 						@include gradient-vertical(#fce130, #f4a611);
 
 						&:hover {
-							@include gradient-vertical(#ffe958, #ffbd40);
+							@include gradient-vertical(#fff08a, #f5d46c);
 						}
 					}
 
@@ -160,7 +161,7 @@
 				font-weight: 700;
 				line-height: 40px;
 				text-decoration: none;
-				margin: 15px -30px 0 -30px;
+				margin: 15px -34px 0 -34px;
 				border-top: 1px solid #dcdcdc;
 
 				&:active {
