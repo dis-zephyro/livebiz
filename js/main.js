@@ -78,15 +78,18 @@ $(document).ready(function() {
         {
             var $form = $(this).closest('form'),
                 name    =     $('input[name="name"]', $form).val(),
+                type    =     $('input[name="type"]', $form).val(),
                 phone   =     $('input[name="phone"]', $form).val(),
                 form   =     $('input[name="form"]', $form).val();
-            console.log(name, phone, form);
+            console.log(name, phone, form, type);
             $.ajax({
                 type: "POST",
                 url: "form-handler.php",
-                data: {name: name, phone: phone, form:form}
+                data: {name: name, phone: phone, form:form, type:type}
             }).done(function(msg) {
-                console.log(name, phone, form);
+                console.log(name, phone, form, type);
+                document.location.replace('http://livebz.ru?check='+type);
+
                 $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
                 $.fancybox.open('#done', 'closeBtn : false');

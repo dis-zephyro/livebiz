@@ -149,7 +149,9 @@
 				font-size: 47px;
 				font-weight: 700;
 				line-height: 50px;
-				font-family: $font-pt;
+				display: inline-block;
+				padding-right: 30px;
+				background: url("../img/ruble.png") right center no-repeat;
 			}
 
 			.solution__choice {

@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
 @font-face {
   font-family: 'Panton';
@@ -1093,7 +1091,9 @@ label {
         font-size: 47px;
         font-weight: 700;
         line-height: 50px;
-        font-family: "PT Sans", sans-serif; }
+        display: inline-block;
+        padding-right: 30px;
+        background: url("../img/ruble.png") right center no-repeat; }
       .b05 .solution .solution__item .solution__choice {
         outline: none;
         display: block;
