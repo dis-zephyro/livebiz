@@ -1,6 +1,6 @@
 $('.header__nav li a').click(function(){
     var str=$(this).attr('href');
-    $.scrollTo(str, 500, {offset:-115});
+    $.scrollTo(str, 500, {offset: 0});
     return false;
 });
 
