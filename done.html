@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js done" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1040">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="js/vendor/jquery.smoothDivScroll/css/smoothDivScroll.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="done__head">Спасибо</div>
+            <div class="done__title">Ваше сообщение отправлено</div>
+            <div class="done__text">Наш менеджер перезвонит Вам в ближайшее время!</div>
+            <a href="http://livebz.ru" class="btn btn-lg">Вернуться на сайт</a>
+        </div>
+
+
+
+        <!--Google analytics-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-68869035-1', 'auto'); //ТУТ МЕНЯТЬ НОМЕР НА СВОЙ
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+
+            / Accurate bounce rate by time /
+            if (!document.referrer ||
+                    document.referrer.split('/')[2].indexOf(location.hostname) != 0)
+                setTimeout(function(){
+                    ga('send', 'event', 'Новый посетитель', location.pathname);
+                }, 15000);</script>
+
+        <!--Google analytics-->
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter33096743 = new Ya.Metrika({
+                            id:33096743,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/33045533" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <script type="text/javascript">
+            setTimeout('location.replace("/index.html")', 5000);
+            /*Изменить текущий адрес страницы через 3 секунды (3000 миллисекунд)*/
+        </script>
+    </body>
+</html>
