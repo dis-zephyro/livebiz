@@ -88,12 +88,13 @@ $(document).ready(function() {
                 data: {name: name, phone: phone, form:form, type:type}
             }).done(function(msg) {
                 console.log(name, phone, form, type);
-                document.location.replace('http://livebz.ru?check='+type);
-
-                $('form').find('input[type=text], textarea').val('');
+                   $('form').find('input[type=text], textarea').val('');
                 console.log('удачно');
+                /*
                 $.fancybox.open('#done', 'closeBtn : false');
                 setTimeout("$.fancybox.close()", 3000);
+                */
+                document.location.replace('http://livebz.ru/done.html?check='+type);
             });
         }
     });
