@@ -65,7 +65,7 @@
                     <div class="b01__ring3 scroll"></div>
                 </div>
                 <div class="b01__form">
-                    <form class="form" name="form" method="POST" action="javascript:void(0);"  onClick="ga('send', 'event', 'form1', 'send'); return true;">
+                    <form class="form" name="form" method="POST" action="javascript:void(0);"  onSubmit="ga('send', 'event', 'form1', 'send'); return true;">
                         <div class="form__title">Заполните форму</div>
                         <div class="form__subtitle">и узнайте сколько клиентов Вы получите с помощью наших Landing page</div>
                         <input type="hidden" name="form" class="hide" value="Узнайте сколько клиентов Вы получите с помощью наших Landing page">
@@ -524,7 +524,7 @@
                     <li>Вы узнаете сколько клиентов ищут Ваш товар или услугу в интернете</li>
                     <li>Вы узнаете нужен ли Вашему бизнесу сайт на данном этапе</li>
                 </ul>
-                <form class="form" name="form" method="POST" action="javascript:void(0);" onClick="ga('send', 'event', 'form2', 'send'); return true;">
+                <form class="form" name="form" method="POST" action="javascript:void(0);" onSubmit="ga('send', 'event', 'form2', 'send'); return true;">
                     <input type="hidden" name="form" class="hide" value="Получите консультацию специалиста в области интернет маркетинга">
                     <input type="hidden" name="type" class="hide" value="2">
                     <div class="form-group valid name none required">
@@ -550,7 +550,7 @@
                     <li>Возможность оплатить Landing Page  Только при достижении нами результата</li>
                     <li>Шоколадка при личной встрече и обсуждение деталей проекта</li>
                 </ul>
-                <form class="form" name="form" method="POST" action="javascript:void(0);" onClick="ga('send', 'event', 'form3', 'send'); return true;">
+                <form class="form" name="form" method="POST" action="javascript:void(0);" onSubmit="ga('send', 'event', 'form3', 'send'); return true;">
                     <input type="hidden" name="form" class="hide" value="Оставьте заявку на создание Landing Page прямо сейчас и Вы получите">
                     <input type="hidden" name="type" class="hide" value="3">
                     <div class="form-group valid name none required">
@@ -573,7 +573,7 @@
                 <div class="form__title">Пакет<span class="rate-start">Старт</span></div>
                 <ul class="form__source">
                 </ul>
-                <form class="form" name="form" method="POST" action="javascript:void(0);" onClick="ga('send', 'event', 'form4', 'send'); return true;">
+                <form class="form" name="form" method="POST" action="javascript:void(0);" onSubmit="ga('send', 'event', 'form4', 'send'); return true;">
                     <input type="hidden" name="form" class="hide" value="Пакет Старт">
                     <input type="hidden" name="type" class="hide" value="4">
                     <div class="form-group valid name none required">
@@ -596,7 +596,7 @@
                 <ul class="form__source">
                     <li>Настройка и месячное ведение Я.Директ <strong class="text-red">В ПОДАРОК!</strong></li>
                 </ul>
-                <form class="form" name="form" method="POST" action="javascript:void(0);" onClick="ga('send', 'event', 'form5', 'send'); return true;">
+                <form class="form" name="form" method="POST" action="javascript:void(0);" onSubmit="ga('send', 'event', 'form5', 'send'); return true;">
                     <input type="hidden" name="form" class="hide" value="Пакет Бизнес">
                     <input type="hidden" name="type" class="hide" value="5">
                     <div class="form-group valid name none required">
@@ -619,7 +619,7 @@
                 <ul class="form__source">
                     <li>Разработка и запуск Landing Page <strong class="text-red">БЕЗ ПРЕДОПЛАТЫ!</strong></li>
                 </ul>
-                <form class="form" name="form" method="POST" action="javascript:void(0);" onClick="ga('send', 'event', 'form6', 'send'); return true;">
+                <form class="form" name="form" method="POST" action="javascript:void(0);" onSubmit="ga('send', 'event', 'form6', 'send'); return true;">
                     <input type="hidden" name="form" class="hide" value="Пакет Премиум">
                     <input type="hidden" name="type" class="hide" value="6">
                     <div class="form-group valid name none required">
@@ -664,7 +664,7 @@
 
             ga('create', 'UA-68869035-1', 'auto'); //ТУТ МЕНЯТЬ НОМЕР НА СВОЙ
             ga('require', 'displayfeatures');
-            ga('send', 'pageview');
+            ga('send', 'event');
 
             / Accurate bounce rate by time /
             if (!document.referrer ||
