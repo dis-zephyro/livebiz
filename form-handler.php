@@ -3,14 +3,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $form = $_POST['form'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
 
-	
+
     require 'class.phpmailer.php';
-    $thm = "Вам отправлено сообщение с " . $_SERVER['SERVER_NAME'];
-    $msg = "<strong>Заголовок формы:</strong> $form<br/>";
+    $thm = 'Вам отправлено сообщение с сайта a-mebel - ' . $form;
+    $msg = "<strong>Форма:</strong> $form <br/>";
     if(isset($name)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
+    if(isset($email)){$msg .= "<strong>Email:</strong> $email <br/>";}
+    if(isset($message)){$msg .= "<strong>Вопрос:</strong> $message <br/>";}
 
 
     $mail = new PHPMailer();
@@ -28,3 +32,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
+
